@@ -16,4 +16,10 @@ public abstract class Fighter extends Player implements IWeapon {
         selectedWeapon.attack(enemy);
     }
 
+    public void attack(Player player){
+        selectedWeapon.attack(player);
+    }
+
+
+
 }
