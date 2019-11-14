@@ -1,6 +1,7 @@
 package players.mages;
 
 import defenders.IDefend;
+import enemys.Enemy;
 import players.Player;
 import spells.ISpell;
 
@@ -13,12 +14,12 @@ public abstract class Mage extends Player implements ISpell, IDefend {
         super(name, health);
     }
 
-    public void cast(){
-        this.selectedSpell.cast();
+    public void cast(Enemy enemy){
+        this.selectedSpell.cast(enemy);
     }
 
-    public void defend(){
-        this.selectedDefense.defend();
+    public void defend(Enemy enemy){
+        this.selectedDefense.defend(enemy);
     }
 
 }

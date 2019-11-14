@@ -1,5 +1,7 @@
 package defenders;
 
+import enemys.Enemy;
+
 public class Dragon implements IDefend {
 
     private int damageValue;
@@ -8,7 +10,8 @@ public class Dragon implements IDefend {
         this.damageValue = 30;
     }
 
-    public void defend(){
+    public void defend(Enemy enemy){
+        enemy.takeDamage(this.damageValue);
         System.out.println("Dragony ROOOAAARRR! Damage " + this.damageValue);
     }
 
