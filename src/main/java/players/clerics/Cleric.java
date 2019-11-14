@@ -13,7 +13,7 @@ public class Cleric extends Player implements IHeal {
         this.selectedRemedy = new Potion();
     }
 
-    public void heal(){
-        this.selectedRemedy.heal();
+    public void heal(Player player){
+        this.selectedRemedy.heal(player);
     }
 }

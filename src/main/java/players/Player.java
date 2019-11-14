@@ -10,7 +10,13 @@ public abstract class Player {
         this.health = health;
     }
 
+    public int getHealth(){
+        return this.health;
+    }
 
+    public void receiveHealth(int amount){
+        this.health += amount;
+    }
 
 
 }
