@@ -10,6 +10,9 @@ public abstract class Enemy {
         this.health = health;
     }
 
+    public int getHealth(){
+        return this.health;
+    }
 
     public void takeDamage(int damageValue){
         this.health -= damageValue;

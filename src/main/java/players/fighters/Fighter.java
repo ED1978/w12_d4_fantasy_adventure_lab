@@ -1,5 +1,6 @@
 package players.fighters;
 
+import enemys.Enemy;
 import players.Player;
 import weapons.IWeapon;
 
@@ -11,8 +12,8 @@ public abstract class Fighter extends Player implements IWeapon {
         super(name, health);
     }
 
-    public void attack(){
-        selectedWeapon.attack();
+    public void attack(Enemy enemy){
+        selectedWeapon.attack(enemy);
     }
 
 }
