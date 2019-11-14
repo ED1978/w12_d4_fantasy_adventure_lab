@@ -23,4 +23,10 @@ public class WarlockTest {
         warlock.cast(orc);
         assertEquals(68, orc.getHealth());
     }
+
+    @Test
+    public void canDefend() {
+        warlock.defend(orc);
+        assertEquals(55, orc.getHealth());
+    }
 }
